@@ -1,4 +1,4 @@
-from .elements import create_air, create_earth, create_fire, create_water
+from .elements import create_fire, create_water, create_air, create_earth
 
 
 def healing_potion() -> None:
@@ -6,7 +6,7 @@ def healing_potion() -> None:
 
 
 def strength_potion() -> None:
-    return f"Strength potion brewed with {create_earth()} and {create_fire()}"
+    return f"Strength potion brewed with {create_earth} and {create_fire()}"
 
 
 def invisibility_potion() -> None:
@@ -16,4 +16,4 @@ def invisibility_potion() -> None:
 
 def wisdom_potion() -> None:
     data = "Wisdom poriton brewed with all elements:"
-    return f"{data} {create_air} {create_earth} {create_fire} {create_water}"
+    return f"{data} {create_fire} {create_earth} {create_water} {create_air}"
